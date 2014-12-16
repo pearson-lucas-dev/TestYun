@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.lucaspearson.testyun.MainActivity" >
+
+    <Button
+        android:id="@+id/startCar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="17dp"
+        android:text="Start Car" />
+
+    <Button
+        android:id="@+id/unlockCar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/stopCar"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/stopCar"
+        android:text="Unlock Car" />
+
+    <Button
+        android:id="@+id/lockCar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/unlockCar"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/unlockCar"
+        android:text="Lock Car" />
+
+    <Button
+        android:id="@+id/stopCar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/startCar"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/startCar"
+        android:text="Stop Car" />
+
+</RelativeLayout>
